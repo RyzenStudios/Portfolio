@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>My Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <div class="background-video">
+        <video autoplay loop muted playsinline>
+            <source src="assets/shadergradient1.webm" type="video/webm">
+        </video>
+    </div>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img alt="Logo" src="logo.png" style="width: 80px; height: 80px;" />
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link" id="link1"><a href="#">Projects</a></li>
+            <li class="link" id="link2"><a href="#">Skills</a></li>
+            <li class="link" id="link3"><a href="#">About Me</a></li>
+        </ul>
+    </nav>
+    <div class="separator">
+    </div>
+    <div class="separator2">
+    </div>
+    <div class="separator3">
+    </div>
+    <header class="container hidden">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <div class="text">
+                <h1>Hello! I'm <span>Mohamed Eltaib!</span></h1>
+                <p style="font-size: 2rem; font-family: Verdana, sans-serif;">
+                    Computer science major with a passion for solving complex challenges.
+                </p>
+                <a class="btn" href="#overview">
+                    <svg class="border" height="60px" viewbox="0 0 180 60" width="180px">
+                        <polyline class="bg-line" points="179,1 179,59 1,59 1,1 179,1"></polyline>
+                        <polyline class="hl-line" points="179,1 179,59 1,59 1,1 179,1"></polyline>
+                    </svg>
+                    <span>Explore Now!</span>
+                </a>
+            </div>
+        </div>
+        <img alt="Mohamed Eltaib" class="profile-image" src="assets/IMG_2152.png" />
+    </header>
+
+    <section class="container hidden" id="overview">
+        <h3 class="overview-title">Overview</h3>
+        <p class="overview-introduction">
+            Computer science major with expertise in programming, algorithm design, and data structures. Passionate
+            about leveraging technology for challenging problem-solving. Experienced in Java and Python.
+        </p>
+        <h2 class="header">SKILLS</h2>
+        <div class="features">
+            <div class="card">
+                <i class="ri-money-dollar-box-line"></i>
+                <h4>Languages</h4>
+                <p>Python, Java, C/C++, HTML, CSS, Lisp</p>
+            </div>
+            <div class="card">
+                <i class="ri-money-dollar-box-line"></i>
+                <h4>Java</h4>
+                <p>School</p>
+            </div>
+            <div class="card">
+                <i class="ri-money-dollar-box-line"></i>
+                <h4>Courses</h4>
+                <p>Computer Science I &amp; II, Data Structures, Computer Organization I, Introduction to UNIX, C and
+                    C++, Linear Algebra, Calculus and Computational Methods I, Discrete Mathematics I</p>
+            </div>
+            <div class="card">
+                <i class="ri-money-dollar-box-line"></i>
+                <h4>Experience</h4>
+                <p>Designer at Gamefam Studios for almost 2 years, involved with Sonic, TMNT, NFL, Spongebob, Barbie,
+                    etc.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Movie Website Explorer</h3>
+            <img src="assets/thum.PNG" alt="Movie Website Explorer Thumbnail">
+            <p>Explore movie details, reviews, and ratings.</p>
+            <a href="https://ryzenstudios.github.io/Movie-Website-Explorer-" target="_blank">Visit</a>
+            <a href="https://github.com/RyzenStudios/Movie-Website-Explorer-" target="_blank">View Code</a>
+        </div>
+
+        <div class="project">
+            <h3>Eli Camps Website</h3>
+            <img src="assets/eli.PNG" alt="Eli Camps Website Thumbnail">
+            <p>Discover information about Eli Camps and its offerings.</p>
+            <a href="https://ryzenstudios.github.io/Eli-Camps-Website" target="_blank">Visit</a>
+            <a href="https://github.com/RyzenStudios/Eli-Camps-Website" target="_blank">View Code</a>
+        </div>
+
+        <div class="project">
+            <h3>Arcade Portfolio</h3>
+            <img src="assets/arc.PNG" alt="Arcade Portfolio Thumbnail">
+            <p>Showcasing a personal portfolio with creative projects.</p>
+            <a href="https://ryzenstudios.github.io/Arcade-Personal-Website" target="_blank">Visit</a>
+            <a href="https://github.com/RyzenStudios/Arcade-Personal-Website" target="_blank">View Code</a>
+        </div>
+
+        <div class="project">
+            <h3>Ada Analytics Web App</h3>
+            <img src="assets/ada.PNG" alt="Movie Website Explorer Thumbnail">
+            <p>Future of investing.</p>
+            <a href="https://ryzenstudios.github.io/Movie-Website-Explorer-" target="_blank">Visit</a>
+            <a href="https://github.com/RyzenStudios/Movie-Website-Explorer-" target="_blank">View Code</a>
+        </div>
+    </section>
+
+    <section class="container hidden" id="contact">
+        <h2 class="header">CONTACT ME</h2>
+        <p class="sub-header">
+            I am always looking for new internships and opportunities to help me learn. Contact me at
+            flameadel13@gmail.com
+        </p>
+    </section>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://twitter.com/Ryzen_Studios" rel="noopener noreferrer" target="_blank">
+                <img alt="Twitter" height="32"
+                    src="https://www.freepnglogos.com/x-logo-twitter-transparent-logo-download-3.png" width="32" />
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-eltaib-50736b25b/" rel="noopener noreferrer" target="_blank">
+                <img alt="LinkedIn" height="32"
+                    src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png"
+                    width="32" />
+            </a>
+            <a href="https://github.com/RyzenStudios" rel="noopener noreferrer" target="_blank">
+                <img alt="GitHub" height="32"
+                    src="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png" width="45" />
+            </a>
+        </div>
+        <div class="footer">
+            <p class="footer-copyright">&copy; 2023 Mohamed Eltaib. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
