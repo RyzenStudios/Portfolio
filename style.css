@@ -427,6 +427,30 @@ section .header {
 }
 
 
+.download {
+    padding: 15px 25px;
+    background-color: #0a002c31;
+    color: #b3b3b3;
+    font-size: 16px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 470px;
+    border: 1px solid rgba(207, 207, 207, 0.397);
+
+}
+
+.download:hover {
+    background-color: #211d31bb;
+    color: white;
+    border: 1px solid rgb(185, 185, 185);
+
+}
+
+#resume h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
 /* FOOTER SECTION */
 .footer {
     display: flex;
