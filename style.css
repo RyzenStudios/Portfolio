@@ -74,11 +74,10 @@ h2 {
 
 
 .profile-image:hover {
-    max-width: 302px;
-    max-height: 302px;
+    max-width: 301px;
+    max-height: 301px;
     opacity: 90%;
     box-shadow: 0 0 55px 1px #841dd82c;
-    transform: rotateY(15deg);
 
 }
 
@@ -395,6 +394,7 @@ section .header {
 
 .project img {
     width: 100%;
+    margin-bottom: 10px;
     height: auto;
     border-radius: 4px;
 }
@@ -450,6 +450,35 @@ section .header {
     margin-bottom: 50px;
     font-size: 40px;
 }
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.fullscreen:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+
+
 
 /* FOOTER SECTION */
 .footer {

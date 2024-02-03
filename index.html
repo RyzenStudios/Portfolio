@@ -186,11 +186,20 @@
         </div>
 
         <div class="project">
-            <h3>Eli Camps Website</h3>
-            <img src="assets/eli.PNG" alt="Eli Camps Website Thumbnail">
-            <p>Discover information about Eli Camps and its offerings.</p>
-            <a href="https://ryzenstudios.github.io/Eli-Camps-Website" target="_blank">Visit</a>
-            <a href="https://github.com/RyzenStudios/Eli-Camps-Website" target="_blank" class="view-code-link">View
+            <h3>This Website</h3>
+            <img src="assets/port.PNG" alt="Portfolio Website ">
+            <p>Check out the code for this hand made portfolio.</p>
+            <a href="https://mohamedeltaib.ca/" target="_blank">Visit</a>
+            <a href="https://github.com/RyzenStudios/Portfolio" target="_blank" class="view-code-link">View
+                Code</a>
+        </div>
+
+        <div class="project">
+            <h3>StormSense</h3>
+            <img src="assets/weather.PNG" alt="Weather">
+            <p>Stay ahead of the storm with StormSense.</p>
+            <a href="https://github.com/RyzenStudios/stormsense" target="_blank">Visit</a>
+            <a href="https://github.com/RyzenStudios/stormsense" target="_blank" class="view-code-link">View
                 Code</a>
         </div>
 
@@ -202,15 +211,23 @@
             <a href="https://github.com/RyzenStudios/Eli-Camps-Website" target="_blank" class="view-code-link">View
                 Code</a>
         </div>
-
-
     </section>
+
+
+    <h2 class="section-title">3D Design</h2>
+
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/909559284?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+            style="position:absolute;top:0;left:15%;width:70%;height:70%;" title="Reel"></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
 
 
 
     <section class="container hidden" id="resume">
         <h2 class="header">Take A Copy Of My Resume!</h2>
-        <a class="download" href="https://github.com/RyzenStudios/Portfolio/raw/main/Eltaib_Resume.pdf"
+        <a class="download" href="https://github.com/RyzenStudios/Portfolio/blob/main/Eltaib_Resume.pdf"
             download="Eltaib_Resume.pdf">Download Resume</a>
     </section>
 
@@ -221,7 +238,6 @@
             flameadel13@gmail.com
         </p>
     </section>
-
     <footer>
         <nav class="footer-nav">
             <ul>
@@ -273,7 +289,34 @@
 
 
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var projects = document.querySelectorAll(".project");
 
+            projects.forEach(function (project) {
+                project.addEventListener("click", function () {
+                    toggleFullScreen(project);
+                });
+            });
+
+            function toggleFullScreen(project) {
+                project.classList.toggle("fullscreen");
+
+                if (project.classList.contains("fullscreen")) {
+                    document.addEventListener("click", exitFullScreen);
+                } else {
+                    document.removeEventListener("click", exitFullScreen);
+                }
+
+                function exitFullScreen(event) {
+                    if (!project.contains(event.target)) {
+                        project.classList.remove("fullscreen");
+                        document.removeEventListener("click", exitFullScreen);
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
